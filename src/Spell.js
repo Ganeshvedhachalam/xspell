@@ -37,12 +37,13 @@ function SpellCheckApp() {
           rows={5}
           cols={40}
         />
-        </header>
-        {suggestedText&&
+         {suggestedText&&
         <p>
         Did you mean: <strong>{suggestedText}</strong>?
       </p>
       }
+        </header>
+       
       </div>
 
       
