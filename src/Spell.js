@@ -14,7 +14,7 @@ function SpellCheckApp() {
     const handleInputChange=(e)=>{
         const text=e.target.value
         setInputText(text)
-        const words=text.splt(" ")
+        const words=text.split(" ")
         const correctedwords= words.map((word)=>{
             const correctedword=customDictionary[word.toLowerCase()]
             return correctedword || word 
